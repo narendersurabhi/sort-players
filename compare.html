@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Comparison</title>
+</head>
+<body>
+    <h1>Who is better?</h1>
+    <form method="post" action="/compare">
+        <button type="submit" name="winner" value="{{ player1 }}">{{ player1 }}</button>
+        <button type="submit" name="winner" value="{{ player2 }}">{{ player2 }}</button>
+        <input type="hidden" name="loser" value="{{ player1 if winner == player2 else player2 }}">
+    </form>
+</body>
+</html>

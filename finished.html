@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finished</title>
+</head>
+<body>
+    <h1>Comparisons Completed</h1>
+    <ul>
+        {% for winner, loser in order %}
+            <li>{{ winner }} is better than {{ loser }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
